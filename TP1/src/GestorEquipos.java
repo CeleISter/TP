@@ -39,18 +39,8 @@ public class GestorEquipos {
 		}
 		
 	}
-	public void BuscarEquipo(GestorEquipos gestor) {
-		String[] equipos = new String[gestor.getEquipos().size()];
-		
-		for (int i = 0; i < equipos.length; i++) {
-			equipos[i] = gestor.getEquipos().get(i).getNombre();
-		}
-		
-		int opcion1 = JOptionPane.showOptionDialog(null, "Seleccione equipo 1", null, 0, 0, null, equipos, equipos);
-		int opcion2 = JOptionPane.showOptionDialog(null, "Seleccione equipo 2", null, 0, 0, null, equipos, equipos);
-
-		
-	}
+	
+	
 	
 	public void CantitadTotal() {
 		JOptionPane.showMessageDialog(null, "Cantidad total de equipos: " + equipos.size());
